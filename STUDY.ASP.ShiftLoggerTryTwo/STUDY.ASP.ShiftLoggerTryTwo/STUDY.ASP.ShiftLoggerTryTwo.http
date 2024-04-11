@@ -1,0 +1,6 @@
+@STUDY.ASP.ShiftLoggerTryTwo_HostAddress = http://localhost:5123
+
+GET {{STUDY.ASP.ShiftLoggerTryTwo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
