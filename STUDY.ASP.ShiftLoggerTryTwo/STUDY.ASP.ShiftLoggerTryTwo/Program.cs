@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using STUDY.ASP.ShiftLoggerTryTwo.Data;
+using STUDY.ASP.ShiftLoggerTryTwo.Entities;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 

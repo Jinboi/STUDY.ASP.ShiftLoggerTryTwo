@@ -10,6 +10,6 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Data
 
         }
 
-        public DbSet<ShiftLogger> ShiftLoggers { get; set; }
+        public DbSet<ShiftLoggerEntity> ShiftLoggers { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace STUDY.ASP.ShiftLoggerTryTwo.Entities
 {
-    public class ShiftLogger
+    public class ShiftLoggerEntity
     {
         public int Id { get; set; }
         public required int EmployeeId { get; set; }

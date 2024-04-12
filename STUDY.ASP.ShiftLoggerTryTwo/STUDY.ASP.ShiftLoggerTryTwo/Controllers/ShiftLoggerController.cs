@@ -19,7 +19,7 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Controllers
 
         [HttpGet]
 
-        public async Task<ActionResult<List<ShiftLogger>>> GetAllShiftLoggers()
+        public async Task<ActionResult<List<ShiftLoggerEntity>>> GetAllShiftLoggers()
         {
             var shifts = await _context.ShiftLoggers.ToListAsync();               
             
@@ -27,7 +27,7 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ShiftLogger>> GetShiftLogger(int id)
+        public async Task<ActionResult<ShiftLoggerEntity>> GetShiftLogger(int id)
         {   
             var shift = await _context.ShiftLoggers.FindAsync(id);
             if (shift is null)
@@ -37,7 +37,7 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<ShiftLogger>>> AddShift(ShiftLogger shift)
+        public async Task<ActionResult<List<ShiftLoggerEntity>>> AddShift(ShiftLoggerEntity shift)
         {
             _context.ShiftLoggers.Add(shift);
             await _context.SaveChangesAsync();
@@ -46,7 +46,7 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<List<ShiftLogger>>> UpdateShiftLogger(ShiftLogger updatedShift)
+        public async Task<ActionResult<List<ShiftLoggerEntity>>> UpdateShiftLogger(ShiftLoggerEntity updatedShift)
         {
             var dbShift = await _context.ShiftLoggers.FindAsync(updatedShift.Id);
             if (dbShift is null)
@@ -61,7 +61,7 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Controllers
             return Ok(await _context.ShiftLoggers.ToListAsync());
         }
         [HttpDelete]
-        public async Task<ActionResult<List<ShiftLogger>>> DeleteShift(int id)
+        public async Task<ActionResult<List<ShiftLoggerEntity>>> DeleteShift(int id)
         {
             var dbShift = await _context.ShiftLoggers.FindAsync(id);
             if (dbShift is null)
