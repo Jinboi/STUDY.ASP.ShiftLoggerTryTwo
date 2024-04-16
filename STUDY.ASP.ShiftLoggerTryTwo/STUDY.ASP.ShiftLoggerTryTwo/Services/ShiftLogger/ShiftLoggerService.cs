@@ -11,7 +11,14 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Services.ShiftLogger
 
         public List<ShiftLoggerEntity> DeleteShift(int id)
         {
-            throw new NotImplementedException();
+            var dbShift = await _context.ShiftLoggers.FindAsync(id);
+            if (dbShift is null)
+                return NotFound("Shift not found.");
+
+            _context.ShiftLoggers.Remove(dbShift);
+            await _context.SaveChangesAsync();
+
+            return Ok(await _context.ShiftLoggers.ToListAsync());
         }
 
         public List<ShiftLoggerEntity> GetAllShiftLoggers()

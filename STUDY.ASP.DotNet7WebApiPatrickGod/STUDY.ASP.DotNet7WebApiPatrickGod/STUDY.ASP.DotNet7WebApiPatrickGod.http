@@ -1,0 +1,6 @@
+@STUDY.ASP.DotNet7WebApiPatrickGod_HostAddress = http://localhost:5150
+
+GET {{STUDY.ASP.DotNet7WebApiPatrickGod_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

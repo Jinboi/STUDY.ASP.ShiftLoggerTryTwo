@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using STUDY.ASP.ShiftLoggerTryTwo.Data;
 using STUDY.ASP.ShiftLoggerTryTwo.Entities;
+using STUDY.ASP.ShiftLoggerTryTwo.Services.ShiftLogger;
 
 namespace STUDY.ASP.ShiftLoggerTryTwo.Controllers
 {
@@ -10,11 +11,11 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Controllers
     [ApiController]
     public class ShiftLoggerController : ControllerBase
     {
-        private readonly DataContext _context;
+        private readonly IShiftLoggerService _shiftLoggerService;
 
-        public ShiftLoggerController(DataContext context)
+        public ShiftLoggerController(IShiftLoggerService shiftLoggerService)
         {
-            _context = context;
+            _shiftLoggerService = shiftLoggerService;
         }
 
         [HttpGet]
@@ -63,14 +64,9 @@ namespace STUDY.ASP.ShiftLoggerTryTwo.Controllers
         [HttpDelete]
         public async Task<ActionResult<List<ShiftLoggerEntity>>> DeleteShift(int id)
         {
-            var dbShift = await _context.ShiftLoggers.FindAsync(id);
-            if (dbShift is null)
-                return NotFound("Shift not found.");
-
-            _context.ShiftLoggers.Remove(dbShift);
-            await _context.SaveChangesAsync();
-
-            return Ok(await _context.ShiftLoggers.ToListAsync());
+            var result = _shiftLoggerService.DeleteShift(id);
+            if (result is null)
+                return Ok(result);
         }
     }
 }
