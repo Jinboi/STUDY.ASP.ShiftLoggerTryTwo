@@ -12,7 +12,6 @@
     },
     "https": {
       "commandName": "Project",
-      "workingDirectory": "C:\\MEGA\\WIP\\01-GitClone\\STUDY.ASP.DotNet7WebApiPatrickGod",
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {

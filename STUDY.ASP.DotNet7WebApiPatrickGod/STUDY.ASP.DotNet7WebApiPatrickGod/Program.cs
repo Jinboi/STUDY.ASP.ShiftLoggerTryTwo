@@ -3,7 +3,7 @@ global using STUDY.ASP.DotNet7WebApiPatrickGod.Data;
 using STUDY.ASP.DotNet7WebApiPatrickGod.Services.SuperHeroService;
 
 var builder = WebApplication.CreateBuilder(args);
-
+    
 // Add services to the container.
 
 builder.Services.AddControllers();

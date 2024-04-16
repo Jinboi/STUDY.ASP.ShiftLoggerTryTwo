@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\STUDY.ASP.ShiftLoggerTryThree.props" />
+</Project>

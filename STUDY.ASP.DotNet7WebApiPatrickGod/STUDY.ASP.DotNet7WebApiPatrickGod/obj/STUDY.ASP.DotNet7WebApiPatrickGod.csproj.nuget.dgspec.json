@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MEGA\\WIP\\01-GitClone\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod.csproj": {}
+    "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod.csproj": {}
   },
   "projects": {
-    "C:\\MEGA\\WIP\\01-GitClone\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod.csproj": {
+    "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MEGA\\WIP\\01-GitClone\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod.csproj",
+        "projectUniqueName": "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod.csproj",
         "projectName": "STUDY.ASP.DotNet7WebApiPatrickGod",
-        "projectPath": "C:\\MEGA\\WIP\\01-GitClone\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod.csproj",
-        "packagesPath": "C:\\Users\\duddn\\.nuget\\packages\\",
-        "outputPath": "C:\\MEGA\\WIP\\01-GitClone\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\obj\\",
+        "projectPath": "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod.csproj",
+        "packagesPath": "C:\\Users\\Youngwoo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.DotNet7WebApiPatrickGod\\STUDY.ASP.DotNet7WebApiPatrickGod\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\duddn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Youngwoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
