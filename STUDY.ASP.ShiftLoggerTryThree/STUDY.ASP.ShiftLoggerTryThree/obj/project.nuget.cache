@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "32Sy1Q1NYBPBDngSpPg/L2DMpJprhOweLpyNktWZgRZ54BibCeGR92ftvEeff3oQWgzVfwRN3UyROnrhLORt4g==",
+  "dgSpecHash": "7DXOCOEfvEf+LXvFrev5NroOrMsLZp4W0spQXiSfARmDPc676+0ED6nvnijHzXdv3dnPsEiPsEyUgnZRb/yIyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.Console.ShiftLogger\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree.csproj",
+  "projectFilePath": "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Youngwoo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Youngwoo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

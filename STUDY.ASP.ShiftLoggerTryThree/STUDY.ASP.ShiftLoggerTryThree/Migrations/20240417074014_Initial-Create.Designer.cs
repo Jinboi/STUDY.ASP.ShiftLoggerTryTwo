@@ -12,7 +12,7 @@ using STUDY.ASP.ShiftLoggerTryThree.Data;
 namespace STUDY.ASP.ShiftLoggerTryThree.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240416055817_Initial-Create")]
+    [Migration("20240417074014_Initial-Create")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -44,7 +44,7 @@ namespace STUDY.ASP.ShiftLoggerTryThree.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ShiftLogs");
+                    b.ToTable("Shifts");
                 });
 #pragma warning restore 612, 618
         }

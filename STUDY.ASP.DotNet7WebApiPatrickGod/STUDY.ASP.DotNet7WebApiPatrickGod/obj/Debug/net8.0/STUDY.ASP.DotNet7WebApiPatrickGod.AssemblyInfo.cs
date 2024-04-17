@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("STUDY.ASP.DotNet7WebApiPatrickGod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c24ad1e906654f9b53fbfb20ccb0289568b2e57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f88cfeceb17d88c90678d35cde326cf0dbf8ae5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("STUDY.ASP.DotNet7WebApiPatrickGod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("STUDY.ASP.DotNet7WebApiPatrickGod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

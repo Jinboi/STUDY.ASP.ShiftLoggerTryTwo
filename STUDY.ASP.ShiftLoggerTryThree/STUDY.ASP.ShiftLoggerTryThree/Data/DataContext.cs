@@ -16,6 +16,6 @@ namespace STUDY.ASP.ShiftLoggerTryThree.Data
             optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\LocalDBDemo;Database=shiftloggerdb;Trusted_Connection=true;TrustServerCertificate=true;");
         }
 
-        public DbSet<ShiftLogger> ShiftLogs { get; set; }
+        public DbSet<ShiftLogger> Shifts { get; set; }
     }
 }

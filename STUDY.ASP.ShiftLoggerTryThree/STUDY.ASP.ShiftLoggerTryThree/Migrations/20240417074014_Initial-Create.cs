@@ -12,7 +12,7 @@ namespace STUDY.ASP.ShiftLoggerTryThree.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ShiftLogs",
+                name: "Shifts",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace STUDY.ASP.ShiftLoggerTryThree.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ShiftLogs", x => x.Id);
+                    table.PrimaryKey("PK_Shifts", x => x.Id);
                 });
         }
 
@@ -31,7 +31,7 @@ namespace STUDY.ASP.ShiftLoggerTryThree.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ShiftLogs");
+                name: "Shifts");
         }
     }
 }

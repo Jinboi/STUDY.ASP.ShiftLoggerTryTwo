@@ -41,7 +41,7 @@ namespace STUDY.ASP.ShiftLoggerTryThree.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ShiftLogs");
+                    b.ToTable("Shifts");
                 });
 #pragma warning restore 612, 618
         }
