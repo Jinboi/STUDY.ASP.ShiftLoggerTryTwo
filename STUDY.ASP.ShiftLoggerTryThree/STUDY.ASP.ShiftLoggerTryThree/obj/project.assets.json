@@ -4523,23 +4523,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Youngwoo\\.nuget\\packages\\": {},
+    "C:\\Users\\duddn\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree.csproj",
+      "projectUniqueName": "C:\\MEGA\\WIP\\02-GitWIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree.csproj",
       "projectName": "STUDY.ASP.ShiftLoggerTryThree",
-      "projectPath": "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree.csproj",
-      "packagesPath": "C:\\Users\\Youngwoo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Youngwoo\\Documents\\MEGA\\WIP\\02-WIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree\\obj\\",
+      "projectPath": "C:\\MEGA\\WIP\\02-GitWIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree.csproj",
+      "packagesPath": "C:\\Users\\duddn\\.nuget\\packages\\",
+      "outputPath": "C:\\MEGA\\WIP\\02-GitWIP\\STUDY.ASP.ShiftLoggerTryTwo\\STUDY.ASP.ShiftLoggerTryThree\\STUDY.ASP.ShiftLoggerTryThree\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Youngwoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\duddn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
