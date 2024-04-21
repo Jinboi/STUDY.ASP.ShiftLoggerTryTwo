@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using STUDY.ASP.ShiftLoggerTryThree.Models;
 
 
 namespace STUDY.ASP.ShiftLoggerTryThree.Data
