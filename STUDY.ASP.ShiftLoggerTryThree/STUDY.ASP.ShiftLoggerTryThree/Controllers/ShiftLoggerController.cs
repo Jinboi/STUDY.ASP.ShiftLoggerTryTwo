@@ -6,8 +6,9 @@ using STUDY.ASP.ShiftLoggerTryThree.Services;
 
 namespace STUDY.ASP.ShiftLoggerTryThree.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+
+    [Route("api/shiftlogger")]
     public class ShiftLoggerController : ControllerBase
     {
 
