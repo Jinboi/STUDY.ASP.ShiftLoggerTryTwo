@@ -685,3 +685,4 @@ C:\MEGA\WIP\02-GitWIP\try 2\STUDY.ASP.ShiftLoggerTryTwo\STUDY.ASP.ShiftLoggerTry
 C:\MEGA\WIP\02-GitWIP\try 2\STUDY.ASP.ShiftLoggerTryTwo\STUDY.ASP.ShiftLoggerTryThree\STUDY.ASP.ShiftLoggerTryThree\obj\Debug\net8.0\STUDY.ASP.ShiftLoggerTryThree.pdb
 C:\MEGA\WIP\02-GitWIP\try 2\STUDY.ASP.ShiftLoggerTryTwo\STUDY.ASP.ShiftLoggerTryThree\STUDY.ASP.ShiftLoggerTryThree\obj\Debug\net8.0\STUDY.ASP.ShiftLoggerTryThree.genruntimeconfig.cache
 C:\MEGA\WIP\02-GitWIP\try 2\STUDY.ASP.ShiftLoggerTryTwo\STUDY.ASP.ShiftLoggerTryThree\STUDY.ASP.ShiftLoggerTryThree\obj\Debug\net8.0\ref\STUDY.ASP.ShiftLoggerTryThree.dll
+C:\Users\Youngwoo\Documents\MEGA\WIP\02-WIP\STUDY.ASP.ShiftLoggerTryTwo\STUDY.ASP.ShiftLoggerTryThree\STUDY.ASP.ShiftLoggerTryThree\bin\Debug\net8.0\Spectre.Console.dll

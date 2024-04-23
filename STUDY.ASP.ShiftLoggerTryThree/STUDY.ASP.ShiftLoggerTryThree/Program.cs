@@ -1,14 +1,7 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 using Spectre.Console;
 using STUDY.ASP.ShiftLoggerTryThree.Data;
 using STUDY.ASP.ShiftLoggerTryThree.Models;
 using STUDY.ASP.ShiftLoggerTryThree.Services;
-using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -26,10 +19,6 @@ app.MapControllers();
 // Start ASP.NET Core application in a separate thread
 Task.Run(() => StartWebAPI(app));
 
-// CLI Functionality
-Console.WriteLine("Web API starting... Press Enter to start Shift Logger CLI.");
-Console.ReadLine();
-
 StartShiftLoggerCLI();
 
 void StartWebAPI(WebApplication app)
@@ -37,11 +26,15 @@ void StartWebAPI(WebApplication app)
     app.Run();
 }
 
+Console.Clear();
 void StartShiftLoggerCLI()
 {
     // CLI Functionality
     using var httpClient = new HttpClient();
     const string ApiBaseUrl = "https://localhost:7188/api/shiftlogger";
+
+
+    Console.Clear();
 
     AnsiConsole.WriteLine("Welcome to Shift Logger CLI");
 
@@ -77,7 +70,8 @@ void ViewAllShiftLogs(HttpClient httpClient, string apiBaseUrl)
     {
         foreach (var shiftLog in shiftLogs)
         {
-            AnsiConsole.WriteLine($"Id: {shiftLog.Id}, EmployeeId: {shiftLog.EmployeeId}, ClockIn: {shiftLog.ClockIn}, ClockOut: {shiftLog.ClockOut}");
+            TimeSpan duration = shiftLog.ClockOut - shiftLog.ClockIn;
+            AnsiConsole.WriteLine($"Id: {shiftLog.Id}, EmployeeId: {shiftLog.EmployeeId}, ClockIn: {shiftLog.ClockIn}, ClockOut: {shiftLog.ClockOut}, Duration: {duration}");
         }
     }
     else
