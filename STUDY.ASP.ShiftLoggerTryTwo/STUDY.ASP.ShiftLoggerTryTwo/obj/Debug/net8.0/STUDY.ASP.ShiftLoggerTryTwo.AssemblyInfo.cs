@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("STUDY.ASP.ShiftLoggerTryTwo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c24ad1e906654f9b53fbfb20ccb0289568b2e57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb1aacef57fc60fe2b315dfbe4d4f736395570ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("STUDY.ASP.ShiftLoggerTryTwo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("STUDY.ASP.ShiftLoggerTryTwo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
