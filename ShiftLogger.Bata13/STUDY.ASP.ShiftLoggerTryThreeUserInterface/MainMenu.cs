@@ -1,23 +1,10 @@
-﻿using System.Net.Http.Json;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Spectre.Console;
-using STUDY.ASP.ShiftLoggerTryThree.Models;
+﻿using Spectre.Console;
 
 namespace STUDY.ASP.ShiftLoggerTryThreeUserInterface;
-
-//add user input validation
-//add no negative date validation
-//add update and delete
-//clear consoles and use table 
-
-
-class MainMenu
+internal class MainMenu
 {
-    static HttpClient client = new HttpClient();
-    const string ApiBaseUrl = "https://localhost:7188/api/shiftlogger"; 
-    public static void ShowMainMenu()
+    public static void ShowMainMenu(HttpClient client, string ApiBaseUrl)
     {
-        // Your user interface logic goes here
         Console.WriteLine("Welcome to Shift Logger User Interface");
 
         while (true)
@@ -44,10 +31,10 @@ class MainMenu
                     ProgramEngine.AddShiftLog(client, ApiBaseUrl);
                     break;
                 case "Update Shift Log":
-                    ProgramEngine.UpdateShiftLog();
+                    ProgramEngine.UpdateShiftLog(client, ApiBaseUrl);
                     break;
                 case "Delete Shift Log":
-                    ProgramEngine.DeleteShiftLog();
+                    ProgramEngine.DeleteShiftLog(client, ApiBaseUrl);
                     break;
                 case "Quit":
                     Environment.Exit(0);
