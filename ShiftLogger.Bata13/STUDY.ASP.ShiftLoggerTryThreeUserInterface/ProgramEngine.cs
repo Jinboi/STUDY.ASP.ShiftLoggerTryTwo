@@ -1,5 +1,6 @@
 ﻿using Spectre.Console;
 using STUDY.ASP.ShiftLoggerTryThree.Models;
+using System.Collections.Generic;
 using System.Net.Http.Json;
 
 namespace STUDY.ASP.ShiftLoggerTryThreeUserInterface;
@@ -10,40 +11,50 @@ internal class ProgramEngine
         var shiftLogs = client.GetFromJsonAsync<ShiftLogger[]>(ApiBaseUrl).Result;
         if (shiftLogs != null)
         {
-            var table = new Table();
 
-            table.AddColumn(new TableColumn("Id").Centered());
-            table.AddColumn(new TableColumn("First Name").Centered());
-            table.AddColumn(new TableColumn("Last Name").Centered());
-            table.AddColumn(new TableColumn("Clock In").Centered());
-            table.AddColumn(new TableColumn("Clock Out").Centered());
-            table.AddColumn(new TableColumn("Duration").Centered());
+            ShowTable(shiftLogs);
 
-            foreach (var shiftLog in shiftLogs)
-            {
-                TimeSpan duration = shiftLog.ClockOut - shiftLog.ClockIn;                
-                duration = TimeSpan.FromMinutes(Math.Round(duration.TotalMinutes));
-                string durationString = $"{(int)duration.TotalHours}h {duration.Minutes}m";
-
-                table.AddRow(
-                    $"{shiftLog.Id}",
-                    $"{shiftLog.EmployeeFirstName}",
-                    $"{shiftLog.EmployeeLastName}",
-                    $"{shiftLog.ClockIn}",
-                    $"{shiftLog.ClockOut}",
-                    $"[red]{durationString}[/]"
-                );
-            }
-
-            AnsiConsole.Write(table);
+            
         }
         else
         {
             AnsiConsole.WriteLine("No shift logs found.");
         }
-
+            
         Helper.ReturnToMainMenu(client, ApiBaseUrl);
-    }   
+    }
+
+    public static void ShowTable(ShiftLogger[] shiftLogs)
+    {
+        var table = new Table();
+
+        table.AddColumn(new TableColumn("Id").Centered());
+        table.AddColumn(new TableColumn("First Name").Centered());
+        table.AddColumn(new TableColumn("Last Name").Centered());
+        table.AddColumn(new TableColumn("Clock In").Centered());
+        table.AddColumn(new TableColumn("Clock Out").Centered());
+        table.AddColumn(new TableColumn("Duration").Centered());
+
+        foreach (var shiftLog in shiftLogs)
+        {
+            TimeSpan duration = shiftLog.ClockOut - shiftLog.ClockIn;
+            duration = TimeSpan.FromMinutes(Math.Round(duration.TotalMinutes));
+            string durationString = $"{(int)duration.TotalHours}h {duration.Minutes}m";
+
+            table.AddRow(
+                $"{shiftLog.Id}",
+                $"{shiftLog.EmployeeFirstName}",
+                $"{shiftLog.EmployeeLastName}",
+                $"{shiftLog.ClockIn}",
+                $"{shiftLog.ClockOut}",
+                $"[red]{durationString}[/]"
+            );
+        }
+
+        AnsiConsole.Write(table);
+    }
+
+
     public static void ViewSpecificShiftLog(HttpClient client, string ApiBaseUrl)
     {
         try

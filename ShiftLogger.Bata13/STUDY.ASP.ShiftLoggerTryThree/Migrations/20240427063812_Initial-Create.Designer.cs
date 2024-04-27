@@ -12,7 +12,7 @@ using STUDY.ASP.ShiftLoggerTryThree.Data;
 namespace STUDY.ASP.ShiftLoggerTryThree.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240425030556_Initial-Create")]
+    [Migration("20240427063812_Initial-Create")]
     partial class InitialCreate
     {
         /// <inheritdoc />
